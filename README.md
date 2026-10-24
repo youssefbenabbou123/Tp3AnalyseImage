@@ -15,6 +15,8 @@ Le banc d'essai est réalisé sur la base de données RUG (40 images et vérité
 
 ---
 
+Video demonstrative et Explication du code : https://drive.google.com/file/d/1qYao8HlkdzS2Dtp2yqdE8HSLRIunZOzw/view?usp=sharing
+
 ## Utilisation
 
 Le projet s'ouvre avec Visual Studio via `TP_contours.sln`.
