@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="TP_contours/TP_contours.vcxproj" Id="847291a4-9e32-4f18-912b-34a812efd091" />
+</Solution>
