@@ -40,8 +40,8 @@ enum class DetectorType {
 struct AppState {
   int method_idx = 0;       
     int image_idx = 0;        
-      int thresh1 = 100;        // meilleur seuil unique (Sobel) / seuil bas (Canny)
- int thresh2 = 300;        // seuil haut Canny (ratio 3:1 recommande OpenCV)
+      int thresh1 = 100;        
+ int thresh2 = 300;        
     int kernel_idx = 1;       
    int blur_idx = 0;         
       int use_neighborhood = 1; 
@@ -140,7 +140,7 @@ cv::Scalar getMethodBadgeColor(int idx) {
 // fonction pour appliquer les filtres
 cv::Mat applyDetector(const cv::Mat& src, int method_idx, int th1, int th2, int ksize, int blur_sz) {
     cv::Mat gray;
-    src.copyTo(gray);  // copie profonde obligatoire : evite la modification de src en batch
+    src.copyTo(gray);  
     if (blur_sz > 0) {
         cv::GaussianBlur(gray, gray, cv::Size(blur_sz, blur_sz), 0);
     }
